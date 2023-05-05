@@ -4,7 +4,7 @@ Host devA
   ProxyJump bastion
 
 Host devB
-  HostName 91.106.198.93
+  HostName 91.106.198.217
   User ubuntu
   ProxyJump bastion
 
