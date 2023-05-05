@@ -1,6 +1,6 @@
 [Webservers]
 devA ansible_host=103.57.74.131 ansible_user=ubuntu
-devB ansible_host=91.106.198.93 ansible_user=ubuntu
+devB ansible_host=91.106.198.217 ansible_user=ubuntu
 devC ansible_host=91.106.198.31 ansible_user=ubuntu
 
 [Bastionserver]
