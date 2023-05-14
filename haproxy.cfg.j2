@@ -46,6 +46,7 @@ backend backendnodes
     http-request set-header X-Forwarded-Port %[dst_port]
     http-request add-header X-Forwarded-Proto https if { ssl_fc }
     option httpchk HEAD / HTTP/1.1\r\nHost:localhost
-    server devA 103.57.72.181:5000 check
-    server devB 103.57.72.70:5000 check
-    server devC 103.57.72.5:5000 check
+{% for dev_servers in groups['webservers'] %}
+    server  {{ dev_servers }} {{
+hostvars[dev_servers]["ansible_default_ipv4"]["address"]}}:5000
+   {% endfor %}
