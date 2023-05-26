@@ -1,10 +1,13 @@
-[HAproxy]
-HAproxy
+[HAproxy]  
+HAproxy  
+ 
+[webservers]  
+devA  
+devB  
+devC  
 
-[webservers]
-devA
-devB
-devC
-
-[all:vars]
+[bastionET2598]
+bastionET2598
+ 
+[all:vars]  
 ansible_user=ubuntu
